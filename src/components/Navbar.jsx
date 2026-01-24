@@ -5,12 +5,19 @@ export default function Navbar() {
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setOpen(false); // close mobile menu after click
-  };
+    if (!element) return;
 
+    const navbarHeight = 80; // fixed navbar height
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+
+    setOpen(false);
+  };
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/70 border-b border-[var(--border-subtle)] backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
