@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 export default function Skills() {
   return (
     <motion.section
-      id="about"
+      id="skills"
       className="py-24 px-6 bg-[var(--bg-secondary)]"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}

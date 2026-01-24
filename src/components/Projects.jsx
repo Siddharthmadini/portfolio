@@ -2,14 +2,13 @@ import { motion } from "framer-motion";
 export default function Projects() {
   return (
     <motion.section
-  id="about"
-  className="py-24 px-6 bg-[var(--bg-secondary)]"
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6 }}
->
-
+      id="projects"
+      className="py-24 px-6 bg-[var(--bg-secondary)]"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-10">Projects</h2>
 
@@ -31,17 +30,11 @@ export default function Projects() {
 
             <div className="flex gap-4 text-sm">
               <a
-                href="https://github.com/Siddharthmadini"
+                href="https://github.com/Siddharthmadini/campus-to-career"
                 target="_blank"
                 className="underline text-[var(--text-muted)] hover:text-white"
               >
                 GitHub
-              </a>
-              <a
-                href="#"
-                className="underline text-[var(--text-muted)] hover:text-white"
-              >
-                Live Demo
               </a>
             </div>
           </div>
@@ -63,17 +56,11 @@ export default function Projects() {
 
             <div className="flex gap-4 text-sm">
               <a
-                href="https://github.com/Siddharthmadini"
+                href="https://github.com/Siddharthmadini/ExpenseTracker"
                 target="_blank"
                 className="underline text-[var(--text-muted)] hover:text-white"
               >
                 GitHub
-              </a>
-              <a
-                href="#"
-                className="underline text-[var(--text-muted)] hover:text-white"
-              >
-                Live Demo
               </a>
             </div>
           </div>
@@ -97,7 +84,7 @@ export default function Projects() {
 
             <div className="flex gap-4 text-sm">
               <a
-                href="https://github.com/Siddharthmadini"
+                href="https://github.com/Siddharthmadini/WeatherMan"
                 target="_blank"
                 className="underline text-[var(--text-muted)] hover:text-white"
               >
