@@ -36,6 +36,13 @@ export default function Projects() {
               >
                 GitHub
               </a>
+              <a
+                href="https://k5zvfz50-4000.inc1.devtunnels.ms/first_year.html"
+                target="_blank"
+                className="underline text-[var(--text-muted)] hover:text-white"
+              >
+                Live Demo
+              </a>
             </div>
           </div>
 
