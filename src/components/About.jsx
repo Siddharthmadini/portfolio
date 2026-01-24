@@ -3,7 +3,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="py-24 px-6 bg-[var(--bg-secondary)]"
+      className="py-24 px-6 bg-[var(--bg-secondary)] scroll-mt-[90px]"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

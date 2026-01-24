@@ -2,14 +2,13 @@ import { motion } from "framer-motion";
 export default function Contact() {
   return (
     <motion.section
-  id="contact"
-  className="py-24 px-6 bg-[var(--bg-secondary)]"
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6 }}
->
-
+      id="contact"
+      className="py-24 px-6 bg-[var(--bg-secondary)] scroll-mt-[90px]"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-10">Contact</h2>
 

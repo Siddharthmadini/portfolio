@@ -3,7 +3,7 @@ export default function Skills() {
   return (
     <motion.section
       id="skills"
-      className="py-24 px-6 bg-[var(--bg-secondary)]"
+      className="py-24 px-6 bg-[var(--bg-secondary)] scroll-mt-[90px]"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
