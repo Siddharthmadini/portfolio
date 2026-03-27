@@ -45,7 +45,7 @@ export default function Contact() {
             <p>
               <span className="text-[var(--text-muted)]">LinkedIn:</span>{" "}
               <a
-                href="https://linkedin.com/in/siddharth-madini"
+                href="https://www.linkedin.com/in/siddharth-madini-a46105240"
                 target="_blank"
                 rel="noreferrer"
                 className="underline hover:text-white transition"
