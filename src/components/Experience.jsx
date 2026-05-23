@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    role: "Virtual Intern — AI & Machine Learning",
+    role: "Virtual Intern — Artificial Intelligence",
     company: "Infosys Springboard",
     duration: "Jan 2025 – Present",
     type: "Internship",
     description:
-      "Working on AI/ML modules covering supervised and unsupervised learning, neural networks, and model evaluation. Completing hands-on projects involving data preprocessing, feature engineering, and building predictive models using Python and scikit-learn.",
-    tags: ["Python", "Machine Learning", "scikit-learn", "Data Analysis"],
+      "Developed an AI-based IVR (Interactive Voice Response) framework as part of a collaborative team project. Worked on designing and implementing AI-driven components, contributing to the end-to-end development of the system alongside team members.",
+    tags: ["Python", "Artificial Intelligence", "IVR", "Team Collaboration"],
   },
   {
     role: "Open Source Contributor",
