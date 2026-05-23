@@ -47,7 +47,7 @@ export default function Skills() {
             >
               <h3 className="font-semibold mb-4">Databases</h3>
               <p className="text-sm text-[var(--text-muted)] leading-relaxed">
-                MongoDB, Mongoose ODM, SQLite
+                MongoDB, Mongoose, SQLite
               </p>
             </motion.div>
 
