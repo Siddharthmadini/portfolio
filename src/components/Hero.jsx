@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 bg-[var(--bg-main)] text-[var(--text-primary)]">
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 bg-[var(--bg-main)] text-[var(--text-primary)]">
       <motion.div
         className="max-w-3xl text-center"
         initial={{ opacity: 0, y: 30 }}
@@ -10,7 +10,7 @@ export default function Hero() {
       >
         {/* Tag line */}
         <p className="uppercase tracking-widest text-sm mb-4 text-[var(--text-muted)]">
-          Frontend Developer • Full Stack Aspirant
+          Full Stack Developer • AI/ML Enthusiast
         </p>
 
         {/* Main heading */}
@@ -20,7 +20,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-lg md:text-xl text-[var(--text-muted)] mb-10">
-          Frontend-focused developer with hands-on experience in React and
+          Full Stack developer with hands-on experience in React and
           modern web technologies, passionate about solving real-world problems
           through technology.
         </p>
@@ -28,6 +28,7 @@ export default function Hero() {
         {/* Action buttons */}
         <div className="flex flex-wrap justify-center gap-4">
           <motion.a
+            href="#projects"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             className="px-7 py-3 bg-white text-black font-semibold rounded-lg"

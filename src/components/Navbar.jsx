@@ -1,31 +1,43 @@
 import { useState } from "react";
 
+const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/70 border-b border-[var(--border-subtle)] backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="font-bold text-lg">MADINI MNV SAI SIDDHARTHA</h1>
+        <a href="#home" className="font-bold text-lg hover:opacity-80 transition">
+          MADINI MNV SAI SIDDHARTHA
+        </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 text-sm">
-          <a href="#about" className="hover:text-white transition">
-            About
-          </a>
-          <a href="#skills" className="hover:text-white transition">
-            Skills
-          </a>
-          <a href="#projects" className="hover:text-white transition">
-            Projects
-          </a>
-          <a href="#contact" className="hover:text-white transition">
-            Contact
-          </a>
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-[var(--text-muted)] hover:text-white transition"
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
 
         {/* Mobile Button */}
-        <button onClick={() => setOpen(!open)} className="md:hidden text-2xl">
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-2xl"
+          aria-label="Toggle menu"
+        >
           {open ? "✕" : "☰"}
         </button>
       </div>
@@ -34,18 +46,16 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden border-t border-[var(--border-subtle)] bg-[var(--bg-main)]">
           <div className="flex flex-col px-6 py-4 gap-4 text-sm">
-            <a onClick={() => setOpen(false)} href="#about">
-              About
-            </a>
-            <a onClick={() => setOpen(false)} href="#skills">
-              Skills
-            </a>
-            <a onClick={() => setOpen(false)} href="#projects">
-              Projects
-            </a>
-            <a onClick={() => setOpen(false)} href="#contact">
-              Contact
-            </a>
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-[var(--text-muted)] hover:text-white transition"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
       )}
