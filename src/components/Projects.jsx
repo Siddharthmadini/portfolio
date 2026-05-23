@@ -20,6 +20,48 @@ export default function Projects() {
               transition={{ duration: 0.2 }}
               className="border border-[var(--border-subtle)] rounded-xl p-6"
             >
+              <h3 className="text-xl font-semibold mb-2">
+                AI Based Conversational IVR Modernisation Framework
+              </h3>
+
+              <p className="text-sm text-[var(--text-muted)] mb-4">
+                Python, NLP, Flask, SQLite
+              </p>
+
+              <p className="text-[var(--text-muted)] leading-relaxed mb-4">
+                Developed an AI-powered conversational IVR framework to modernize
+                traditional customer support systems using natural language
+                processing and intelligent voice interaction. Implemented automated
+                query handling, intent recognition, and dynamic response generation
+                to improve user experience and reduce manual intervention.
+              </p>
+
+              <div className="flex gap-4 text-sm">
+                <a
+                  href="https://github.com/Siddharthmadini/AI-Enabled-Conversational-IVR-Modernization-Framework"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline text-[var(--text-muted)] hover:text-white transition"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://ai-enabled-conversational-ivr-moder.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline text-[var(--text-muted)] hover:text-white transition"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Project 2 */}
+            <motion.div
+              whileHover={{ y: -4 }}
+              transition={{ duration: 0.2 }}
+              className="border border-[var(--border-subtle)] rounded-xl p-6"
+            >
               <h3 className="text-xl font-semibold mb-2">CampusToCareer</h3>
 
               <p className="text-sm text-[var(--text-muted)] mb-4">
@@ -53,7 +95,7 @@ export default function Projects() {
               </div>
             </motion.div>
 
-            {/* Project 2 */}
+            {/* Project 3 */}
             <motion.div
               whileHover={{ y: -4 }}
               transition={{ duration: 0.2 }}
@@ -84,7 +126,7 @@ export default function Projects() {
               </div>
             </motion.div>
 
-            {/* Project 3 */}
+            {/* Project 4 */}
             <motion.div
               whileHover={{ y: -4 }}
               transition={{ duration: 0.2 }}
